@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
 .homePage {
     justify-content: start;
@@ -20,9 +23,13 @@
 }
 
 .textFlair {
-    color: red;
-    /* font-style: italic; */
-    font-family: 'Source Code Pro', monospace;
+    color: #16c824;
+    font-style: italic;
+}
+
+.textFlairMono {
+  color: #16c824;
+  font-family: monospace;
 }
 
 .Typist .Cursor {

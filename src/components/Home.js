@@ -1,22 +1,24 @@
 import React from 'react'
 import './Home.css'
 import Typist from 'react-typist';
+import TypistLoop from 'react-typist-loop';
 
 const Home = () => {
     return(
         <main className='homePage'>
             <h1 className='typistText'>
                 <Typist>
-                    <span>Hello and welcome to my <span className='textFlair'>website!</span></span>
+                    <span>Hello, I am <span className='textFlair'>Håvard Hovde.</span></span>
                     <Typist.Delay ms={500} />
                     <br />
-                    <span>This is a test of the typing component.</span>
+                    <span>I like to write <span className='textFlairMono'>code.</span></span>
                     <Typist.Delay ms={1000} />
-                    <Typist.Backspace count={10} />
-                    <span>effect.</span>
-                    <Typist.Delay ms={2000} />
+                    {/* <Typist.Backspace count={19} /> */}
                     <br />
-                    <span>Here is some more text.</span>
+                    <span>I am based in <span className='textFlair'>Oslo, Norway.</span></span>
+                    {/* <Typist.Delay ms={2000} />
+                    <br />
+                    <span>Here is some more text.</span> */}
                 </Typist>
             </h1>
         </main>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu+Condensed&display=swap');
 
 * {
   padding: 0;
@@ -8,7 +9,9 @@
 }
 
 body, html {
-  font-family: "Open Sans";
+  /* font-family: 'Ubuntu Condensed', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: "Open Sans"; */
 }
 
 a {
