@@ -1,0 +1,39 @@
+.admin-icons {
+    cursor: pointer;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: .5rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.byLine {
+    margin-top: 2rem;
+}
+
+/* .project.active {
+    position: absolute;
+    top: 10vh;
+    left: 2.5vw;
+    min-height: 90vh;
+    min-width: 90vw;
+    z-index: 2;
+    animation: slideOut 1s ease;
+}
+
+@keyframes slideOut {
+    from{
+        transform: scale(0, 0);
+    }
+    to{
+        transform: scale(80vw, 80vh);
+    }
+} */
+
+/* .editIcons {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+} */

@@ -1,0 +1,28 @@
+.project-details{
+    margin: auto;
+    /* margin-top: 3rem; */
+    height: 100%;
+    width: 60vw;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.project-details img{
+    width: 100%;
+    border-radius: 0;
+}
+
+.pager {
+    width: 60vw;
+    color: lightgray;
+    left: 0;
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+}
+
+.pager a {
+    color: white;
+}

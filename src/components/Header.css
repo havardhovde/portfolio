@@ -1,0 +1,75 @@
+.header-container {
+    /* position: absolute; */
+    width: 100vw;
+    height: 10vh;
+    background: black;
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid gray;
+    /* z-index: 2; */
+}
+
+.burger {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+}
+
+header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    align-items: center;
+    gap: .8rem;
+    z-index: 1;
+    padding: .3rem;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+    color: white;
+    font-weight: 300;
+    transition: .3s,
+}
+
+a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+[aria-current="page"] {
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    header {
+        min-width: 100%;
+        transform: translateY(-100%);
+        grid-auto-flow: row;
+        align-content: center;
+        min-height: 100vh;
+        transition: 0.5s ease;
+        background: black;
+        justify-content: center;    
+    }
+
+    header a {
+        font-size: 2rem;
+    }
+    
+    .burger {
+        display: block;
+    }
+
+    header.visible {
+        transform: translateY(0%);
+        z-index: 100;
+    }
+
+    main {
+        padding: 5vh, 5vh;
+    }
+}

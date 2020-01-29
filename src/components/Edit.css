@@ -1,0 +1,83 @@
+input, textarea {
+    font-size: 1rem;
+    padding: .6rem;
+    margin: 2rem 0;
+    display: block;
+}
+
+textarea {
+    min-width: 60vw;
+    min-height: 200px;
+}
+
+.textInputSmall {
+    width: 40vw;
+}
+
+.editPage {
+    background: #151515;
+    height: 100%;
+    width: 80vw;
+    margin: auto;
+    padding: 3rem;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin-top: 4rem;
+}
+
+.checks {
+    display: grid;
+    grid-template-columns: 1fr, 4fr;
+    margin: .4rem 0;
+    padding: .6rem;
+}
+
+.edit .img {
+    width: 5rem;
+}
+
+.edit label {
+    padding: 0;
+    display: inline-block;
+}
+
+select {
+    margin-bottom: 1rem;
+}
+
+.uploaderImage {
+    border-radius: 0%;
+}
+
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: start;
+    gap: .2rem;
+    margin-bottom: 1rem;
+}
+
+.project-images > div {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.project-images img {
+    width: 100%;
+}
+
+.button {
+    border: 1px solid black;
+    max-width: 130px;
+    padding: .4rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+}

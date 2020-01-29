@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Open Sans";
+}
+
+a {
+  color: black;
+}
+
+.mainPage {
+  color: white;
+  background: black;
+}
+
+.add {
+  margin-top: 5vh;
+  transform: scale(1.5);
+}
+
+button {
+  margin-top: 2rem;
+  padding: .4rem;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  min-width: 6rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background-color: black;
+  color: white;
+}

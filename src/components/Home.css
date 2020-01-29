@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+.homePage {
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background: black;
+}
+
+.typistText {
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+.homePage h1 {
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.textFlair {
+    color: red;
+    /* font-style: italic; */
+    font-family: 'Source Code Pro', monospace;
+}
+
+.Typist .Cursor {
+    display: inline-block; }
+    .Typist .Cursor--blinking {
+      opacity: 1;
+      animation: blink 0.7s linear infinite; }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1; }
+    50% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  

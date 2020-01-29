@@ -1,0 +1,60 @@
+/* .projectsContainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+} */
+
+.project {
+    position: relative;
+    min-width: 350px;
+    background: #eee;
+    padding: 2rem;
+    min-height: 350px;
+    margin-top: 30px;
+    color: black;
+    /* transition: 0.3s ease; */
+}
+
+.projectPage {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 0;
+}
+
+.loader {
+    margin-top: 2rem;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    margin-top: 3rem;
+    width: 90vw;
+}
+
+.my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+}
+
+/* .add {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 10vh;
+    height: 5vh;
+    background: #eee;
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+} */
