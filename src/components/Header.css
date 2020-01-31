@@ -1,11 +1,11 @@
 .header-container {
     /* position: absolute; */
-    width: 100vw;
+    max-width: 100vw;
     height: 10vh;
     background: black;
     display: grid;
     place-items: center;
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
     /* z-index: 2; */
 }
 

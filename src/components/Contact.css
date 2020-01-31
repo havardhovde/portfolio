@@ -4,3 +4,11 @@
     place-items: center;
     align-content: center;
 }
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+p {
+    line-height: 2;
+}

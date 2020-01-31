@@ -13,12 +13,6 @@ const Header = (props) => {
                 <Link to="/">home</Link>
                 <Link to="/projects">projects</Link>
                 <Link to="/contact">contact</Link>
-                <Link to="/cv">cv</Link>
-                <Link to="/login">
-                    {
-                        props.signedIn ? "profile" : "login"
-                    }
-                </Link>
             </header>
         </div>
 
