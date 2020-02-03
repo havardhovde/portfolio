@@ -1,19 +1,12 @@
-/* .projectsContainer {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-} */
- 
 .project {
     position: relative;
     min-width: 350px;
-    background: #eee;
+    background: rgb(10, 10, 10);
     padding: 2rem;
     min-height: 350px;
     margin-top: 30px;
-    color: black;
+    color: white;
+    /* border: 1px solid white; */
     /* transition: 0.3s ease; */
 }
 
@@ -37,19 +30,6 @@ h1 {
     margin-top: 2rem;
 }
 
-.my-masonry-grid {
-    display: -webkit-box; /* Not needed if autoprefixing */
-    display: -ms-flexbox; /* Not needed if autoprefixing */
-    display: flex;
-    margin-left: -30px; /* gutter size offset */
-    margin-top: 3rem;
-    width: 90vw;
-}
-
-.my-masonry-grid_column {
-    padding-left: 30px; /* gutter size */
-    background-clip: padding-box;
-}
 
 /* .add {
     position: fixed;

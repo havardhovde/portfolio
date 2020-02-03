@@ -9,8 +9,33 @@
     bottom: 1rem;
 }
 
+.editIcons {
+    color: white;
+}
+
 .byLine {
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+
+.divider {
+    height: 1px;
+    width: 90vw;
+    background: white;
+}
+
+.readMoreLink {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+}
+
+
+.divider {
+    height: 1px;
+    width: 40vw;
+    background: white;
+    margin: 4rem auto;
 }
 
 /* .project.active {

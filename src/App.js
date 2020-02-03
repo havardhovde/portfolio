@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Router, navigate } from "@reach/router"
+import { Router } from "@reach/router"
 import "./App.css"
 import firebase from "./components/firebase"
 import Home from "./components/Home"
@@ -11,12 +11,9 @@ import Cv from "./components/Cv"
 import Login from "./components/Login"
 import Edit from "./components/Edit"
 
-const Default = () => {
-  navigate("home")
-  return(<></>)
-}
-
 const App = () => {
+
+  console.log('this is the latest version')
 
   const [signedIn, setSignedIn] = useState(false)
 
@@ -35,9 +32,8 @@ const App = () => {
   return(
       <div className="mainPage">
         <Header signedIn={signedIn} />
-        <Router>
-          <Default path="/" />
-          <Home path="/home" />
+        <Router basepath={process.env.PUBLIC_URL}>
+          <Home default path="/home" />
           <Projects signedIn={signedIn} path="/projects" />
           <ProjectDetails path="/projects/:id" />
           <Contact path="/contact" />

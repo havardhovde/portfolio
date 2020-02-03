@@ -15,27 +15,30 @@ const Project = (props) => {
     }
 
     return(
-        <div onClick={ () => setActiveProject(!activeProject) } className={activeProject ? "project active" : "project"}>
-            {
-                props.data.defaultImage &&
-                <img src={props.data.defaultImage} alt="default" />
-            }
-            <h2>{props.data.title}</h2>
-            {
-                props.data.description &&
-            <div className="byLine">{props.data.byline}</div>
-            }
-            <Link to={"/projects/" + props.id}>Read More</Link>
-            {
-                props.signedIn &&
-                <div className= "admin-icons">
-                    <Link to={'/edit/' + props.id}>
-                        <MdEdit className= "editIcons" />
-                    </Link>
-                    <MdDelete onClick={deleteProject} className= "editIcons" />
-                </div>
-            }
-        </div>
+        <>
+            <div onClick={ () => setActiveProject(!activeProject) } className={activeProject ? "project active" : "project"}>
+                {
+                    props.data.defaultImage &&
+                    <img src={props.data.defaultImage} alt="default" />
+                }
+                <h2>{props.data.title}</h2>
+                {
+                    props.data.description &&
+                <div className="byLine">{props.data.byline}</div>
+                }
+                <Link className='readMoreLink' to={"/projects/" + props.id}>Read More</Link>
+                {
+                    props.signedIn &&
+                    <div className= "admin-icons">
+                        <Link to={'/edit/' + props.id}>
+                            <MdEdit className= "editIcons" />
+                        </Link>
+                        <MdDelete onClick={deleteProject} className= "editIcons" />
+                    </div>
+                }
+            </div>
+            <div className='divider'></div>
+        </>
     )
 }
 

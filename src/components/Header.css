@@ -26,18 +26,24 @@ header {
     padding: .3rem;
 }
 
-header a {
-    text-decoration: none;
-    color: white;
-    padding: .5rem;
-    color: white;
-    font-weight: 300;
-    transition: .3s,
+.loginButton {
+    display: none;
 }
 
-a:hover {
-    background-color: lightgray;
+.headerButtons {
+    margin-top: 2rem;
+    padding: .4rem;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    /* min-width: 6rem; */
+    transition: 0.3s;
+    cursor: pointer;
+}
+  
+.headerButtons:hover {
     color: black;
+    background-color: white;
 }
 
 [aria-current="page"] {

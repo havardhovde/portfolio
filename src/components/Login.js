@@ -24,7 +24,7 @@ const Login = (props) => {
          {
             !props.signedIn &&
 
-            <button onClick={loginWithGoogle}>Log in</button>
+            <button className='loginButton' onClick={loginWithGoogle}>Log in</button>
          }
          {
             props.signedIn &&

@@ -5,6 +5,13 @@
     align-content: center;
 }
 
+.login button {
+    background: black;
+    border: 1px solid lightgray;
+    color: white;
+    padding: 0.8rem;
+}
+
 img {
     width: 50px;
     margin: 1rem 0;

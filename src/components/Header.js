@@ -10,9 +10,10 @@ const Header = (props) => {
         <div className="header-container">
             <MdMenu className="burger" color="white" size="32" onClick={ () => setShow(!show) } />
             <header className={show ? "visible" : ""} onClick={ () => setShow(false)}>
-                <Link to="/">home</Link>
-                <Link to="/projects">projects</Link>
-                <Link to="/contact">contact</Link>
+                <Link className='headerButtons' to="/">home</Link>
+                <Link className='headerButtons' to={process.env.PUBLIC_URL + "/projects"}>projects</Link>
+                <Link className='headerButtons' to={process.env.PUBLIC_URL + "/contact"}>contact</Link>
+                <Link className="headerButtons loginButton" to={process.env.PUBLIC_URL + "/login"}></Link>
             </header>
         </div>
 

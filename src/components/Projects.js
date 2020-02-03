@@ -5,7 +5,6 @@ import "./Projects.css"
 import { IoIosAddCircle } from "react-icons/io"
 import { navigate } from "@reach/router"
 import ClipLoader from "react-spinners/ClipLoader"
-import Masonry from "react-masonry-css"
 
 const Projects = (props) => {
     const [projects, setProjects] = useState([])
@@ -18,7 +17,7 @@ const Projects = (props) => {
                 description: "Description"
             }
         )
-            .then( doc => navigate("/edit/" + doc.id))
+            .then( doc => navigate(process.env.PUBLIC_URL + "/edit/" + doc.id))
     }
 
     useEffect( () => {
@@ -48,7 +47,7 @@ const Projects = (props) => {
                 projects.length > 0
                 ?
                 // <div className="projectsContainer">
-                <Masonry
+                <div
                     breakpointCols={
                         {
                             default: 3,
@@ -63,7 +62,8 @@ const Projects = (props) => {
                             project => <Project key={project.id} id={project.id} data={project.data()} signedIn={props.signedIn} />
                         )
                     }
-                </Masonry> 
+                </div>
+
             :   <div className="loader">
                     <ClipLoader size={50} />
                 </div>
