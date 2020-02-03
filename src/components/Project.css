@@ -1,3 +1,7 @@
+.projectContainer {
+    margin-bottom: 4rem;
+}
+
 .admin-icons {
     cursor: pointer;
     display: grid;

@@ -15,7 +15,7 @@ const Project = (props) => {
     }
 
     return(
-        <>
+        <div className='projectContainer'>
             <div onClick={ () => setActiveProject(!activeProject) } className={activeProject ? "project active" : "project"}>
                 {
                     props.data.defaultImage &&
@@ -37,8 +37,7 @@ const Project = (props) => {
                     </div>
                 }
             </div>
-            <div className='divider'></div>
-        </>
+        </div>
     )
 }
 
