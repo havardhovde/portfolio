@@ -5,10 +5,17 @@
     align-content: center;
 }
 
-h1 {
-    margin-bottom: 3rem;
+.contactPage a {
+    color: white;
 }
 
-p {
+.contactPage h1 {
+    margin-bottom: 3rem;
+    color: #16c824;
+}
+
+.contactPage p {
+    font-size: 1.2rem;
     line-height: 2;
+    color: white;
 }

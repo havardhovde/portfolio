@@ -41,22 +41,12 @@ const Projects = (props) => {
                 </div>
             }
 
-            <h1>projects</h1>
+            <h1 className='projectPageTitle'>projects</h1>
 
             {
                 projects.length > 0
                 ?
-                // <div className="projectsContainer">
-                <div
-                    breakpointCols={
-                        {
-                            default: 3,
-                            1300: 2,
-                            1100: 1
-                        }
-                }
-                    className="my-masonry-grid"
-                    columnClassName="my-masonry-grid_column">
+                <div className='projectsDisplay'>
                     {
                         projects.map(
                             project => <Project key={project.id} id={project.id} data={project.data()} signedIn={props.signedIn} />

@@ -3,10 +3,21 @@
     /* margin-top: 3rem; */
     height: 100%;
     width: 60vw;
-    text-align: center;
+    text-align: left;
     display: grid;
     place-items: center;
     align-content: center;
+    animation: appear 1s linear 1;
+}
+
+@keyframes appear {
+    from {opacity: 0%;}
+    to {opacity : 100%;}
+  } 
+
+.project-details a {
+    color: white;
+    line-height: 2rem;
 }
 
 .project-details img{

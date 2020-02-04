@@ -20,9 +20,6 @@ textarea {
     width: 80vw;
     margin: auto;
     padding: 3rem;
-    display: grid;
-    place-items: center;
-    align-content: center;
     margin-top: 4rem;
 }
 

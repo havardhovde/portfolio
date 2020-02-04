@@ -2,6 +2,10 @@
     margin-bottom: 4rem;
 }
 
+.project img {
+    width: 50%;
+}
+
 .admin-icons {
     cursor: pointer;
     display: grid;
@@ -18,13 +22,7 @@
 }
 
 .byLine {
-    margin-top: 1rem;
-}
-
-.divider {
-    height: 1px;
-    width: 90vw;
-    background: white;
+    margin-bottom: 2rem;
 }
 
 .readMoreLink {
@@ -33,7 +31,6 @@
     bottom: 0;
     margin-bottom: 2rem;
 }
-
 
 .divider {
     height: 1px;

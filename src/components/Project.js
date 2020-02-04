@@ -17,11 +17,11 @@ const Project = (props) => {
     return(
         <div className='projectContainer'>
             <div onClick={ () => setActiveProject(!activeProject) } className={activeProject ? "project active" : "project"}>
+                <h2>{props.data.title}</h2>
                 {
                     props.data.defaultImage &&
                     <img src={props.data.defaultImage} alt="default" />
                 }
-                <h2>{props.data.title}</h2>
                 {
                     props.data.description &&
                 <div className="byLine">{props.data.byline}</div>

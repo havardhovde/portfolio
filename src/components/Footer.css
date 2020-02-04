@@ -1,0 +1,24 @@
+.footerContainer {
+    margin-top: 3rem;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.footerGrid {
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footerText {
+    margin-top: 1rem;
+    color: white;
+    opacity: 30%;
+}

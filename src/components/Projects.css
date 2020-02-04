@@ -1,7 +1,8 @@
 .project {
     position: relative;
     min-width: 350px;
-    background: rgb(10, 10, 10);
+    max-width: 70vw;
+    background: rgb(20, 20, 20);
     padding: 2rem;
     min-height: 350px;
     margin-top: 30px;
@@ -10,7 +11,7 @@
     /* transition: 0.3s ease; */
 }
 
-h1 {
+.project h1 {
     font-size: 3rem;
 }
 
@@ -21,16 +22,33 @@ h1 {
     align-content: center;
 }
 
+.projectPageTitle {
+    color: #16c824;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+}
+
 .project img {
-    width: 100%;
+    width: 75%;
     border-radius: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
 
 .loader {
     margin-top: 2rem;
 }
 
-
+/* .footerPlacement {
+    position: absolute;
+    margin-top: 7rem;
+    color: white;
+    width: 100%;
+  } */
+  
 /* .add {
     position: fixed;
     width: 100vw;

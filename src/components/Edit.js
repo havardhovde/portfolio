@@ -95,20 +95,6 @@ const Edit = (props) => {
                 <input onChange={updateValue} name="year" className='textInputSmall' placeholder="year" value={project.year}/>
                 <input onChange={updateValue} name="byline" className='textInputSmall' placeholder="Short description for the front page" value={project.byline}/>
 
-                <div className='checks'>
-                    <label htmlFor='html'>html/css</label>
-                    <input name='html' id='html' type='checkbox' onChange={updateValue} defaultChecked={project.html}/>
-                    <label htmlFor='javascript'>JavaScript</label>
-
-                    <input name='javascript' id='javascript' type='checkbox' onChange={updateValue} defaultChecked={project.javascript}/>
-                    <label htmlFor='react'>React</label>
-
-                    <input name='react' id='react' type='checkbox' onChange={updateValue} defaultChecked={project.react}/>
-                    <label htmlFor='p5js'>p5.js</label>
-
-                    <input name='p5js' id='p5js' type='checkbox' onChange={updateValue} defaultChecked={project.p5js}/>
-                </div>
-
                 <div className='project-images'>
                     {
                         project.defaultImage &&
