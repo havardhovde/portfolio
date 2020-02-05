@@ -9,6 +9,7 @@
 .projectsContainer {
   min-height: 100vh;
   margin-top: 0;
+  /* background: white; */
 }
 
 .typistText {

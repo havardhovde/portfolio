@@ -14,7 +14,7 @@ const Home = (props) => {
         <main className='pageContainer'>
             <div id='homePage' className='homePage'>
                 <h1 className='typistText'>
-                    <Typist cursor={{hideWhenDone: true}}>
+                    <Typist cursor={{hideWhenDone: true}} onTypingDone={() => scrollToRef(projectRef)}>
                         <span className='typedText'>Hello, I am <span className='typedText textFlair'>Håvard Hovde.</span></span>
                         <Typist.Delay ms={500} />
                         <br />
@@ -25,6 +25,8 @@ const Home = (props) => {
                         <Typist.Delay ms={500} />
                         <br />
                         <span className='typedText'>Here is some of my <span className='typedText textFlair'>work.</span></span>
+                        <Typist.Delay ms={1500} />
+
                     </Typist>
                 </h1>
             </div>
