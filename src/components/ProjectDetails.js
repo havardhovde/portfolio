@@ -5,6 +5,7 @@ import parse from 'html-react-parser';
 import { Link } from "@reach/router"
 
 const ProjectDetails = (props) => {
+    console.log(props.id)
 
     const [project, setProject] = useState()
     const [Prev, setPrev] = useState()

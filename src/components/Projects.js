@@ -24,7 +24,7 @@ const Projects = (props) => {
         firebase
         .firestore()
         .collection("projects")
-        .orderBy("title")
+        .orderBy("year", 'desc')
         .onSnapshot(
             snapshot => setProjects(snapshot.docs)
         )
@@ -33,7 +33,7 @@ const Projects = (props) => {
 
 
     return(
-        <main className='projectPage'>
+        <main id='projectsContainer' className='projectPage'>
             {
                 props.signedIn &&
                 <div className="add">
@@ -49,7 +49,7 @@ const Projects = (props) => {
                 <div className='projectsDisplay'>
                     {
                         projects.map(
-                            project => <Project key={project.id} id={project.id} data={project.data()} signedIn={props.signedIn} />
+                            project => <Project key={project.id} id={project.id} data={project.data()} signedIn={props.signedIn}/>
                         )
                     }
                 </div>

@@ -131,7 +131,7 @@ const Edit = (props) => {
                     </div>
                 </label>
                 <textarea onChange={updateValue} name="description" value={project.description}/>
-                <button type="submit">Save</button>
+                <button className='saveButton' type="submit">Save</button>
             </form>
             <p>{status}</p>
         </main>

@@ -24,13 +24,13 @@ const Project = (props) => {
                 }
                 {
                     props.data.description &&
-                <div className="byLine">{props.data.byline}</div>
+                    <div className="byLine">{props.data.byline}</div>
                 }
                 <Link className='readMoreLink' to={"/projects/" + props.id}>Read More</Link>
                 {
                     props.signedIn &&
                     <div className= "admin-icons">
-                        <Link to={'/edit/' + props.id}>
+                        <Link to={process.env.PUBLIC_URL + '/edit/' + props.id}>
                             <MdEdit className= "editIcons" />
                         </Link>
                         <MdDelete onClick={deleteProject} className= "editIcons" />

@@ -20,7 +20,7 @@ textarea {
     width: 80vw;
     margin: auto;
     padding: 3rem;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 .checks {
@@ -77,4 +77,8 @@ select {
 .button:hover {
     background: black;
     color: white;
+}
+
+.saveButton {
+    padding: .3rem .5rem;
 }

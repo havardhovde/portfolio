@@ -62,7 +62,7 @@
   bottom: 2rem;
   left: 50%;
   margin-left: -1%;
-  right: 0;
+  /* right: 0; */
   animation: pulse 1s linear infinite;
 }
 

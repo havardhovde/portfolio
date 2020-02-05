@@ -30,7 +30,8 @@ const App = () => {
       <div className="mainPage">
         <Header signedIn={signedIn} />
         <Router basepath={process.env.PUBLIC_URL}>
-          <Home default path="/home" />
+          <Home signedIn={signedIn} path="/home/:id" />
+          <Home signedIn={signedIn} default path="" />
           <Projects signedIn={signedIn} path="/projects" />
           <ProjectDetails path="/projects/:id" />
           <Contact path="/contact" />
