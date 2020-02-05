@@ -12,7 +12,7 @@ const Home = (props) => {
 
     return(
         <main className='pageContainer'>
-            <div className='homePage'>
+            <div id='homePage' className='homePage'>
                 <h1 className='typistText'>
                     <Typist cursor={{hideWhenDone: true}}>
                         <span className='typedText'>Hello, I am <span className='typedText textFlair'>Håvard Hovde.</span></span>

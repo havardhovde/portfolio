@@ -12,7 +12,7 @@ const Header = (props) => {
         <div className="header-container">
             <MdMenu className="burger" color="white" size="32" onClick={ () => setShow(!show) } />
             <header className={show ? "visible" : ""} onClick={ () => setShow(false)}>
-                <a href='/home#' className='headerButtons'>home</a>
+                <a href='/home#homePage' className='headerButtons'>home</a>
                 {/* <Link className='headerButtons' to="/home">home</Link> */}
                 <a href='./home#projectsContainer'className='headerButtons'>projects</a>
                 {/* <Link className='headerButtons' to={process.env.PUBLIC_URL + "/projects"}>projects</Link> */}
