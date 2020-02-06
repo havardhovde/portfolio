@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from 'react'
+import React from 'react'
 import firebase from "./firebase"
 import Project from "./Project"
 import "./Projects.css"
@@ -7,7 +7,6 @@ import { navigate } from "@reach/router"
 import ClipLoader from "react-spinners/ClipLoader"
 
 const Projects = (props) => {
-    const [projects, setProjects] = useState([])
 
     const addProject = () => {
         firebase.firestore().collection("projects").add(
@@ -20,18 +19,6 @@ const Projects = (props) => {
             .then( doc => navigate(process.env.PUBLIC_URL + "/edit/" + doc.id))
     }
 
-    useEffect( () => {
-        firebase
-        .firestore()
-        .collection("projects")
-        .orderBy("year", 'desc')
-        .onSnapshot(
-            snapshot => setProjects(snapshot.docs)
-        )
-    }, [])
-
-
-
     return(
         <main id='projectsContainer' className='projectPage'>
             {
@@ -40,15 +27,15 @@ const Projects = (props) => {
                     <IoIosAddCircle className="editIcons" onClick={addProject} />
                 </div>
             }
-
+            
             <h1 className='projectPageTitle'>projects</h1>
 
             {
-                projects.length > 0
+                props.projects.length > 0
                 ?
                 <div className='projectsDisplay'>
                     {
-                        projects.map(
+                        props.projects.map(
                             project => <Project key={project.id} id={project.id} data={project.data()} signedIn={props.signedIn}/>
                         )
                     }

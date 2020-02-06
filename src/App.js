@@ -13,6 +13,17 @@ import Edit from "./components/Edit"
 const App = () => {
 
   const [signedIn, setSignedIn] = useState(false)
+  const [projects, setProjects] = useState([])
+
+  useEffect( () => {
+    firebase
+    .firestore()
+    .collection("projects")
+    .orderBy("year", 'desc')
+    .onSnapshot(
+        snapshot => setProjects(snapshot.docs)
+    )
+  }, [])
 
   useEffect( () => {
     firebase.auth().onAuthStateChanged(
@@ -30,9 +41,9 @@ const App = () => {
       <div className="mainPage">
         <Header signedIn={signedIn} />
         <Router basepath={process.env.PUBLIC_URL}>
-          <Home signedIn={signedIn} path="/home/:id" />
-          <Home signedIn={signedIn} default path="" />
-          <Projects signedIn={signedIn} path="/projects" />
+          {/* <Home signedIn={signedIn} path="/home/:id" /> */}
+          <Home projects={projects} signedIn={signedIn} default path="" />
+          <Projects projects={projects} signedIn={signedIn} path="/projects" />
           <ProjectDetails path="/projects/:id" />
           <Contact path="/contact" />
           <Login signedIn={signedIn} setSignedIn={setSignedIn} path="/login" />

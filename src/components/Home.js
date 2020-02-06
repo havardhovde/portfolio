@@ -26,7 +26,6 @@ const Home = (props) => {
                         <br />
                         <span className='typedText'>Here is some of my <span className='typedText textFlair'>work.</span></span>
                         <Typist.Delay ms={1500} />
-
                     </Typist>
                 </h1>
             </div>
@@ -34,7 +33,7 @@ const Home = (props) => {
             <FiChevronDown size={52} onClick={()=>scrollToRef(projectRef)} className='downArrow' />
 
             <div ref={projectRef} id='projectsContainer' className='projectsContainer'>
-                <Projects id={props.id} signedIn={props.signedIn} />
+                <Projects projects={props.projects} id={props.id} signedIn={props.signedIn} />
             </div>
         </main>
     )
